@@ -12,7 +12,7 @@ export default function ProductListing() {
     data: products,
     error,
   } = useQuery({
-    queryKey: [],
+    queryKey: ["products"],
     queryFn: () =>
       supabase
         .from("product")
@@ -29,6 +29,7 @@ export default function ProductListing() {
         {products.map((product) => (
           <Grid key={product.id} item xs={12} sm={6} md={3}>
             <ProductCard
+              id={product.id}
               title={product.title}
               price={product.price}
               rating={product.rating}

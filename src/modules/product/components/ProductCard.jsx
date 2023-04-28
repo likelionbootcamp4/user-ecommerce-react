@@ -6,17 +6,21 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Box, IconButton, Rating } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import { Link } from "react-router-dom";
 
-export default function ProductCard({ title, price, imageUrl, rating }) {
+export default function ProductCard({ id, title, price, imageUrl, rating }) {
   return (
     <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
       {/* Image */}
-      <CardMedia
-        sx={{ height: 140 }}
-        image={imageUrl}
-        title={title}
-        component="img"
-      />
+      <Link to={`/products/${id}`}>
+        <CardMedia
+          sx={{ height: 140 }}
+          image={imageUrl}
+          title={title}
+          component="img"
+        />
+      </Link>
+
       <CardContent
         sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}
       >

@@ -11,25 +11,25 @@ const categoryOptions = [
     imageUrl:
       "https://lnfdkaooikvjxeghvcba.supabase.co/storage/v1/object/public/ecommerce/banners/laptop.avif",
     title: "Laptops",
-    href: "/products/laptops",
+    href: "/laptops",
   },
   {
     imageUrl:
       "https://lnfdkaooikvjxeghvcba.supabase.co/storage/v1/object/public/ecommerce/banners/smartphones.avif",
     title: "Smartphones",
-    href: "/products/smartphones",
+    href: "/smartphones",
   },
   {
     imageUrl:
       "https://lnfdkaooikvjxeghvcba.supabase.co/storage/v1/object/public/ecommerce/banners/pc.avif",
     title: "PC",
-    href: "/products/pc",
+    href: "/pc",
   },
   {
     imageUrl:
       "https://lnfdkaooikvjxeghvcba.supabase.co/storage/v1/object/public/ecommerce/banners/tablet.avif",
     title: "Tablets",
-    href: "/products/tablets",
+    href: "/tablets",
   },
 ];
 
